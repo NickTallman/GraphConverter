@@ -14,7 +14,7 @@ using namespace std;
 class Graph {
 public:
 
-	bool transpose; // Keeps track if the graph is transposed or not
+    bool transpose; // Keeps track if the graph is transposed or not
     vector<Vertex> vertices; // Vector of vertices in the graph
 	
     Graph(int size);
@@ -22,13 +22,13 @@ public:
     void buildGraph(); // Builds the graph using an input file
     void displayGraph(); // Displays the graph
 	
-	// Both functions are used to calculate DFS times for each vertex
-	void DFS();
-	void DFSVisit(Vertex& v, int& time);
+    // Both functions are used to calculate DFS times for each vertex
+    void DFS();
+    void DFSVisit(Vertex& v, int& time);
 	
-	void transposeGraph(); // Transposes the graph
+    void transposeGraph(); // Transposes the graph
 	
-	void displayAcyclic(); // Displays the acyclic graph
+    void displayAcyclic(); // Displays the acyclic graph
 };
 
 #endif /* Graph_hpp */
